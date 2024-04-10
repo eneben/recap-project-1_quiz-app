@@ -1,11 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.md-18 {
+  font-size: 18px;
+}
+
+.md-24 {
+  font-size: 24px;
+}
+
+.md-36 {
+  font-size: 36px;
+}
+
+.md-48 {
+  font-size: 48px;
+}
+
+.md-orange {
+  background-color: #f0a04b;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
 }
-
-/* Font-Family hinzufügen */
 
 body {
   background-color: #fefbe9;
@@ -48,14 +70,10 @@ main {
 
 /* bookmark-icon einfügen */
 
-.bookmark {
+.material-symbols-outlined {
   position: absolute;
-  top: -10px;
-  right: 10px;
-  width: 20px;
-  height: 20px;
-  border: 1px solid black;
-  background-color: #f0a04b;
+  top: -15px;
+  right: 15px;
 }
 
 .question {
@@ -72,16 +90,16 @@ button {
   color: #fefbe9;
 }
 
-/* Sichtbarkeit von .answer fixen */
+/* Sichtbarkeit von .answer durch Hinzufügen oder Entfernen von class="visible". Entsprechend muss dann auch der Text im Button verändert werden. */
 
 .answer {
-  /* display: none; */
+  display: none;
   margin: 30px auto;
   line-height: 1.25em;
 }
 
-.answer:first-of-type {
-  display: none;
+.answer.visible {
+  display: block;
 }
 
 .code-block {
@@ -91,12 +109,6 @@ button {
   width: fit-content;
   margin: 0 auto;
 }
-
-/* code {
-  font-family: Consolas, Monaco, "Lucida Console", "Liberation Mono",
-    "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New";
-  font-size: 0.8em;
-} */
 
 .hashtags {
   display: flex;

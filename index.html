@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
+    <!-- Icon Font von Google -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -12,7 +17,9 @@
     </header>
     <main>
       <section class="card">
-        <div class="bookmark"></div>
+        <button class="bookmark material-symbols-outlined md-36 md-orange">
+          bookmark
+        </button>
         <p class="question">How to center an element horizontally in CSS?</p>
         <button>Show Answer</button>
         <div class="answer">
@@ -32,8 +39,8 @@
       <section class="card">
         <div class="bookmark"></div>
         <p class="question">How to create a code block in markdown?</p>
-        <button>Show Answer</button>
-        <div class="answer">
+        <button>Hide Answer</button>
+        <div class="answer visible">
           <p>
             A code block is created with three backticks before and after the
             code:
@@ -55,8 +62,8 @@
       <section class="card">
         <div class="bookmark"></div>
         <p class="question">How to create a new branch in Git?</p>
-        <button>Show Answer</button>
-        <div class="answer">
+        <button>Hide Answer</button>
+        <div class="answer visible">
           <p>A new branch is created with the command</p>
           <div class="code-block">
             <code>git checkout -b &lt;branch-name&gt;</code>
