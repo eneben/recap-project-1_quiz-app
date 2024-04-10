@@ -12,8 +12,78 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 main {
-  margin-top: 15vh;
+  margin-top: calc(15vh + 20px);
+  z-index: 0;
+  background-color: #fefbe9;
+}
+
+.card {
+  margin: 20px;
+  border: 2px solid black;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  background-color: #e1eedd;
+}
+
+/* bookmark-icon einfügen */
+
+.bookmark {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  background-color: #f0a04b;
+}
+
+.question {
+  margin: 30px 50px;
+  line-height: 1.25em;
+}
+
+button {
+  margin: 0 auto;
+  border: 2px solid black;
+  padding: 10px 20px;
+  width: fit-content;
+  background-color: #183a1d;
+  color: #fefbe9;
+}
+
+/* Sichtbarkeit von .answer fixen */
+
+.answer {
+  /* display: none; */
+  margin: 20px auto;
+  line-height: 1.25em;
+}
+
+.answer:first-of-type {
+  display: none;
+}
+
+/* Code als Block mit grauem Hintergrund */
+
+code {
+  padding: 2px;
+  background-color: #d3d3d3;
+}
+
+.hashtags {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tag {
+  border: 2px solid #d3d3d3;
+  padding: 5px;
+  margin: 3px;
+  background-color: #fefbe9;
+  border-radius: 10px;
 }
