@@ -223,19 +223,59 @@ h3 {
   font-weight: bold;
 }
 
-.darkmode {
+.darkmode-flex {
   display: flex;
   justify-content: flex-start;
-  gap: 30px;
+  gap: 40px;
+  align-items: center;
 }
-/* 
 
-Slider Form und Farbe anpassen hat nicht geklappt. 
+.slider-label {
+  position: relative;
+  display: inline-block;
+  height: 34px;
+  width: 60px;
+}
 
-.darkmode #slider::-webkit-slider-thumb {
-  width: 20px !important;
-  background-color: #e1eedd !important;
-  color: #183a1d !important;
-  border: 2px solid #183a1d !important;
-  border-radius: 5px !important;
-} */
+#checkbox {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #183a1d;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  background-color: #e1eedd;
+  bottom: 4px;
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+  content: "";
+}
+
+input:checked + .slider {
+  background-color: #f6c453;
+}
+
+input:checked + .slider:before {
+  background-color: black;
+  transform: translateX(26px);
+}
+
+.slider.round {
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
