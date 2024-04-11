@@ -121,16 +121,35 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-
   background-color: #f6c453;
   z-index: 1;
 }
 
 .navbar {
-  height: 13vh;
+  height: 10vh;
   display: flex;
   list-style: none;
   justify-content: space-around;
   padding: 0;
+  align-items: center;
+}
+
+.navbar li {
+  height: 80%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar li:hover {
+  background-color: #f0a04b;
+}
+
+.navbar li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
