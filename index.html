@@ -4,11 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <!-- Icon Font von Google -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -17,11 +12,11 @@
     </header>
     <main>
       <section class="card">
-        <button class="bookmark material-symbols-outlined md-36 md-orange">
-          bookmark
+        <button class="bookmark hidden">
+          <img src="./icons/bookmark-unmarked.svg" />
         </button>
         <p class="question">How to center an element horizontally in CSS?</p>
-        <button>Show Answer</button>
+        <button class="show-hide">Show Answer</button>
         <div class="answer">
           <p>
             If it has a fixed width, an element can be centered horizontal with
@@ -37,9 +32,11 @@
         </div>
       </section>
       <section class="card">
-        <div class="bookmark"></div>
+        <button class="bookmark hidden">
+          <img src="./icons/bookmark-marked.svg" />
+        </button>
         <p class="question">How to create a code block in markdown?</p>
-        <button>Hide Answer</button>
+        <button class="show-hide">Hide Answer</button>
         <div class="answer visible">
           <p>
             A code block is created with three backticks before and after the
@@ -60,9 +57,11 @@
         </div>
       </section>
       <section class="card">
-        <div class="bookmark"></div>
+        <button class="bookmark hidden">
+          <img src="./icons/bookmark-unmarked.svg" />
+        </button>
         <p class="question">How to create a new branch in Git?</p>
-        <button>Hide Answer</button>
+        <button class="show-hide">Hide Answer</button>
         <div class="answer visible">
           <p>A new branch is created with the command</p>
           <div class="code-block">

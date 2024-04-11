@@ -1,29 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-}
-
-.md-18 {
-  font-size: 18px;
-}
-
-.md-24 {
-  font-size: 24px;
-}
-
-.md-36 {
-  font-size: 36px;
-}
-
-.md-48 {
-  font-size: 48px;
-}
-
-.md-orange {
-  background-color: #f0a04b;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -70,10 +46,20 @@ main {
 
 /* bookmark-icon einfügen */
 
-.material-symbols-outlined {
+.bookmark {
   position: absolute;
   top: -15px;
-  right: 15px;
+  right: 10px;
+}
+
+img {
+  height: 36px;
+  visibility: visible;
+  z-index: 1;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .question {
@@ -81,7 +67,7 @@ main {
   line-height: 1.25em;
 }
 
-button {
+.show-hide {
   margin: 0 auto;
   border: 1px solid black;
   padding: 10px 20px;
