@@ -273,6 +273,6 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-.slider.round:before {
+.slider:before {
   border-radius: 50%;
 }
