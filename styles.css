@@ -1,14 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
+body {
+  background-color: #fefbe9;
+}
+
+p,
+button,
+div {
+  font-family: "PT Serif";
+}
+
 header {
   position: fixed;
+  top: 0;
   width: 100%;
-  height: 15%;
-  background-color: #fefbe9;
+  height: 13vh;
+  background-color: #f6c453;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
+}
+
+h1 {
+  font-family: "PT Sans";
+}
+
+main {
+  margin-top: calc(13vh + 20px);
+}
+
+.card {
+  margin: 20px;
+  border: 2px solid black;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  background-color: #e1eedd;
+}
+
+.bookmark {
+  position: absolute;
+  top: -15px;
+  right: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+img {
+  height: 36px;
+  visibility: visible;
+  z-index: 1;
+}
+
+.question {
+  margin: 30px 50px;
+  line-height: 1.25em;
+}
+
+.show-hide {
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 10px 20px;
+  width: fit-content;
+  background-color: #183a1d;
+  color: #fefbe9;
+}
+
+/* Sichtbarkeit von .answer durch Hinzufügen oder Entfernen von class="visible". Entsprechend muss dann auch der Text im Button verändert werden. */
+
+.answer {
+  display: none;
+  margin: 30px auto;
+  line-height: 1.25em;
+}
+
+.answer.visible {
+  display: block;
+}
+
+.code-block {
+  padding: 7px;
+  margin: 5px;
+  background-color: #d3d3d3;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.hashtags {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.tag {
+  border: 2px solid #d3d3d3;
+  padding: 5px;
+  margin: 3px;
+  background-color: #fefbe9;
+  border-radius: 10px;
+  font-size: smaller;
+  margin-top: 30px;
+  list-style: none;
 }

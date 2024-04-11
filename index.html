@@ -10,5 +10,84 @@
     <header>
       <h1>Quiz App</h1>
     </header>
+    <main>
+      <!--first card-->
+      <section class="card">
+        <!--bookmark-->
+        <button class="bookmark hidden">
+          <img
+            src="./icons/bookmark-unmarked.svg"
+            alt="an unmarked bookmark icon"
+          />
+        </button>
+        <!--question-->
+        <p class="question">How to center an element horizontally in CSS?</p>
+        <!--button-->
+        <button class="show-hide">Show Answer</button>
+        <!--answer-->
+        <div class="answer">
+          <p>
+            If it has a fixed width, an element can be centered horizontal with
+          </p>
+          <div class="code-block">
+            <code>margin: 0 auto;</code>
+          </div>
+        </div>
+        <!--hashtags-->
+        <ul class="hashtags">
+          <li class="tag">#css</li>
+          <li class="tag">#positioning</li>
+          <li class="tag">#frontend</li>
+        </ul>
+      </section>
+      <!--second card-->
+      <section class="card">
+        <button class="bookmark hidden">
+          <img src="./icons/bookmark-marked.svg" alt="a marked bookmark icon" />
+        </button>
+        <p class="question">How to create a code block in markdown?</p>
+        <button class="show-hide">Hide Answer</button>
+        <div class="answer visible">
+          <p>
+            A code block is created with three backticks before and after the
+            code:
+          </p>
+          <div class="code-block">
+            <code
+              >```<br />
+              code <br />
+              ```</code
+            >
+          </div>
+        </div>
+        <ul class="hashtags">
+          <li class="tag">#markdown</li>
+          <li class="tag">#formatting</li>
+          <li class="tag">#codeblock</li>
+        </ul>
+      </section>
+      <!--third card-->
+      <section class="card">
+        <button class="bookmark hidden">
+          <img
+            src="./icons/bookmark-unmarked.svg"
+            alt="an unmarked bookmark icon"
+          />
+        </button>
+        <p class="question">How to create a new branch in Git?</p>
+        <button class="show-hide">Hide Answer</button>
+        <div class="answer visible">
+          <p>A new branch is created with the command</p>
+          <div class="code-block">
+            <code>git checkout -b &lt;branch-name&gt;</code>
+          </div>
+        </div>
+        <ul class="hashtags">
+          <li class="tag">#git</li>
+          <li class="tag">#branch</li>
+          <li class="tag">#repository</li>
+        </u>
+      </section>
+    </main>
   </body>
 </html>
