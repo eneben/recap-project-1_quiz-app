@@ -44,22 +44,20 @@ main {
   background-color: #e1eedd;
 }
 
-/* bookmark-icon einfügen */
-
 .bookmark {
   position: absolute;
   top: -15px;
   right: 10px;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 img {
   height: 36px;
   visibility: visible;
   z-index: 1;
-}
-
-.hidden {
-  visibility: hidden;
 }
 
 .question {
