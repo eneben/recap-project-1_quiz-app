@@ -158,3 +158,12 @@ footer {
 .active {
   background-color: #f0a04b;
 }
+
+.profile-pic {
+  width: 100px;
+  height: auto;
+}
+
+pre {
+  display: inline;
+}
