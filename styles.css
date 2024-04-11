@@ -190,7 +190,7 @@ h3 {
   padding: 15px 0 8px 0;
 }
 
-.about-me p {
+.about-me-and-counter p {
   font-size: 0.9em;
 }
 
@@ -222,3 +222,20 @@ h3 {
 .counter-placeholder {
   font-weight: bold;
 }
+
+.darkmode {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+/* 
+
+Slider Form und Farbe anpassen hat nicht geklappt. 
+
+.darkmode #slider::-webkit-slider-thumb {
+  width: 20px !important;
+  background-color: #e1eedd !important;
+  color: #183a1d !important;
+  border: 2px solid #183a1d !important;
+  border-radius: 5px !important;
+} */
