@@ -116,3 +116,21 @@ img {
   margin-top: 30px;
   list-style: none;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  background-color: #f6c453;
+  z-index: 1;
+}
+
+.navbar {
+  height: 13vh;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 0;
+  align-items: center;
+}
