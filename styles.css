@@ -97,6 +97,7 @@ img {
 .hashtags {
   display: flex;
   justify-content: flex-start;
+  padding: 0;
 }
 
 .tag {
@@ -107,4 +108,5 @@ img {
   border-radius: 10px;
   font-size: smaller;
   margin-top: 30px;
+  list-style: none;
 }
