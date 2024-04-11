@@ -144,6 +144,7 @@ footer {
 
 .navbar li:hover {
   background-color: #f0a04b;
+  border: 2px solid white;
 }
 
 .navbar li a {
@@ -152,4 +153,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.active {
+  background-color: #f0a04b;
 }
