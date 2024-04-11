@@ -223,6 +223,8 @@ h3 {
   font-weight: bold;
 }
 
+/* Ab hier habe ich mir ganz viel zusammen-gegooglet, Sachen ausprobiert, Erklärungen von ChatGPT eingeholt etc. Also nicht kompett auf meinem Mist gewachsen, aber zu meinem gemacht. Auch nicht alles komplett durchdrungen, aber so ziemlich. */
+
 .darkmode-flex {
   display: flex;
   justify-content: flex-start;
