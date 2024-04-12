@@ -33,6 +33,7 @@ h1 {
 
 main {
   margin-top: calc(13vh + 20px);
+  margin-bottom: 10vh;
 }
 
 .card {

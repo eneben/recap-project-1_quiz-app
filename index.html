@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./javascript/index.js" defer></script>
   </head>
   <body>
     <header>
@@ -23,9 +24,9 @@
         <!--question-->
         <p class="question">How to center an element horizontally in CSS?</p>
         <!--button-->
-        <button class="show-hide">Show Answer</button>
+        <button class="show-hide" data-js="show-hide-button">Show Answer</button>
         <!--answer-->
-        <div class="answer">
+        <div class="answer visible" data-js="answer">
           <p>
             If it has a fixed width, an element can be centered horizontal with
           </p>
@@ -46,8 +47,8 @@
           <img src="./icons/bookmark-marked.svg" alt="a marked bookmark icon" />
         </button>
         <p class="question">How to create a code block in markdown?</p>
-        <button class="show-hide">Hide Answer</button>
-        <div class="answer visible">
+        <button class="show-hide" data-js="show-hide-button">Hide Answer</button>
+        <div class="answer " data-js="answer">
           <p>
             A code block is created with three backticks before and after the
             code:
@@ -75,8 +76,8 @@
           />
         </button>
         <p class="question">How to create a new branch in Git?</p>
-        <button class="show-hide">Hide Answer</button>
-        <div class="answer visible">
+        <button class="show-hide" data-js="show-hide-button">Hide Answer</button>
+        <div class="answer visible" data-js="answer">
           <p>A new branch is created with the command</p>
           <div class="code-block">
             <code>git checkout -b &lt;branch-name&gt;</code>
