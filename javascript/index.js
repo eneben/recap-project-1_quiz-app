@@ -5,6 +5,24 @@
 /* 3. if Klasse=dark in classList, dann Icons anderer Pfad (nämlich weiße bzw. hellgrüne) */
 /* 4. gleiches Vorgehen für die anderen Seiten (erst mal nur profile.html) */
 
+const body = document.querySelector('[data-js="body"]');
+const header = document.querySelector('[data-js="header"]');
+const counter = document.querySelector('[data-js="counter"]');
+const footer = document.querySelector('[data-js="footer"]');
+const navbar = document.querySelector('[data-js="navbar"]');
+const active = document.querySelector('[data-js="active"]');
+
+const slider = document.querySelector('[data-js="slider"]');
+
+slider.addEventListener("click", () => {
+  body.classList.toggle("dark");
+  header.classList.toggle("dark");
+  counter.classList.toggle("dark");
+  footer.classList.toggle("dark");
+  navbar.classList.toggle("dark");
+  active.classList.toggle("dark");
+});
+
 /* Toggle Button auf index.html */
 
 const answerButton = document.querySelector('[data-js="show-hide-button"]');
