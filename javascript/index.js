@@ -1,3 +1,7 @@
+/* Dark Mode */
+
+/* Toggle Button */
+
 const answerButton = document.querySelector('[data-js="show-hide-button"]');
 
 const answer = document.querySelector('[data-js="answer"]');
