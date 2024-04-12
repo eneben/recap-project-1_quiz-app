@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+    <main class="profile-main">
+      <section class="user">
+        <img class="profile-pic" src="./profile-picture.png" />
+        <div class="name-box">
+          <h2>Miri Mustergiraffe</h2>
+        </div>
+      </section>
+      <section class="about-me-and-counter">
+        <h3>About me</h3>
+        <p>
+          Moin! Ich bin Miri Mustergiraffe, die quizzlige Quasselstrippe. Mit
+          meinem langen Hals habe ich nicht nur den Überblick über
+          Programmieraufgaben, sondern auch den besten Blick für Lösungen. Ich
+          bringe Farbe in die Welt des Codens!
+          <span class="emoticon"
+            ><img src="./Rainbow_Emoji.png" alt="a rainbow emoticon"
+          /></span>
+        </p>
+        <h3>Created questions and bookmarks</h3>
+        <div class="counter-section">
+          <div class="counter question-count">
+            <img src="./icons/questions.svg" alt="a question icon" />
+            <p class="counter-placeholder">3</p>
+          </div>
+          <div class="counter bookmark-count">
+            <img
+              src="./icons/bookmark-dark-green.svg"
+              alt="a marked bookmark icon"
+            />
+            <p class="counter-placeholder">1</p>
+          </div>
+        </div>
+      </section>
+      <section class="settings">
+        <h3>Settings</h3>
+        <div class="darkmode-flex">
+          <p>Dark Mode</p>
+          <div class="darkmode">
+            <label for="checkbox" class="slider-label">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider"></div>
+              <!--<div class="slider-content"></div>
+              Hier könnte ich später versuchen dem Slider Mond- und Sonne-Icons hinzuzufügen. -->
+            </label>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <ul class="navbar">
+          <li>
+            <a href="./index.html"
+              ><img src="./icons/home.svg" alt="an active home icon"
+            /></a>
+          </li>
+          <li>
+            <a href="./bookmarks.html"
+              ><img
+                src="./icons/bookmarks-folder.svg"
+                alt="an unmarked bookmarks-folder icon"
+            /></a>
+          </li>
+          <li>
+            <a href="./profile.html" class="active"
+              ><img src="./icons/profile.svg" alt="an unmarked profile icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
