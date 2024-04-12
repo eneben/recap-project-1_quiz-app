@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./styles.css" />
     <script src="./javascript/index.js" defer></script>
   </head>
-  <body>
-    <header>
+  <body data-js="body">
+    <header data-js="header">
       <h1>Quiz App</h1>
     </header>
     <main class="profile-main">
@@ -31,11 +31,11 @@
         </p>
         <h3>Created questions and bookmarks</h3>
         <div class="counter-section">
-          <div class="counter question-count">
+          <div class="counter question-count" data-js="counter">
             <img src="./icons/questions.svg" alt="a question icon" />
             <p class="counter-placeholder">3</p>
           </div>
-          <div class="counter bookmark-count">
+          <div class="counter bookmark-count" data-js="counter">
             <img
               src="./icons/bookmark-dark-green.svg"
               alt="a marked bookmark icon"
@@ -59,9 +59,9 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer data-js="footer">
       <nav>
-        <ul class="navbar">
+        <ul class="navbar" data-js="navbar">
           <li>
             <a href="./index.html"
               ><img src="./icons/home.svg" alt="an active home icon"
@@ -75,7 +75,7 @@
             /></a>
           </li>
           <li>
-            <a href="./profile.html" class="active"
+            <a href="./profile.html" class="active" data-js="active"
               ><img src="./icons/profile.svg" alt="an unmarked profile icon"
             /></a>
           </li>
