@@ -33,6 +33,7 @@ h1 {
 
 main {
   margin-top: calc(13vh + 20px);
+  margin-bottom: 10vh;
 }
 
 .card {
@@ -90,7 +91,7 @@ img {
   line-height: 1.25em;
 }
 
-.visible {
+.answer.visible {
   display: block;
 }
 
