@@ -14,7 +14,10 @@ const active = document.querySelector('[data-js="active"]');
 
 const slider = document.querySelector('[data-js="slider"]');
 
+console.log(slider);
+
 slider.addEventListener("click", () => {
+  console.log("event");
   body.classList.toggle("dark");
   header.classList.toggle("dark");
   counter.classList.toggle("dark");
