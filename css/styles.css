@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+@import "./global.css";
+@import "../components/header.css";
+@import "../components/card.css";
+@import "../components/navigation.css";
+@import "../components/profile.css";
+@import "../components/darkmode.css";
+@import "../components/slider.css";

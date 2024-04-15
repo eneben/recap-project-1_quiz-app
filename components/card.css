@@ -1,0 +1,84 @@
+.card {
+  margin: 20px;
+  border: 2px solid black;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  background-color: #e1eedd;
+  border-radius: 10px;
+}
+
+.bookmark {
+  position: absolute;
+  top: -15px;
+  right: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+img {
+  height: 36px;
+  visibility: visible;
+  z-index: 1;
+}
+
+.question {
+  margin: 30px 50px;
+  line-height: 1.25em;
+}
+
+.show-hide {
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 10px 20px;
+  width: fit-content;
+  background-color: #183a1d;
+  color: #fefbe9;
+  border-radius: 10px;
+}
+
+.show-hide:hover {
+  background-color: #f0a04b;
+  color: black;
+  font-weight: bold;
+}
+
+/* Sichtbarkeit von .answer durch Hinzufügen oder Entfernen von class="visible". Entsprechend muss dann auch der Text im Button verändert werden. */
+
+.answer {
+  display: none;
+  margin: 30px auto;
+  line-height: 1.25em;
+}
+
+.answer.visible {
+  display: block;
+}
+
+.code-block {
+  padding: 7px;
+  margin: 5px;
+  background-color: #d3d3d3;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.hashtags {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.tag {
+  border: 2px solid #d3d3d3;
+  padding: 5px;
+  margin: 3px;
+  background-color: #fefbe9;
+  border-radius: 10px;
+  font-size: smaller;
+  margin-top: 30px;
+  list-style: none;
+}
