@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #fefbe9;
+}
+
+body.dark {
+  background-color: black;
+  color: #fefbe9;
+}
+
+p,
+button,
+div {
+  font-family: "PT Serif";
+}
+
+main {
+  margin-top: calc(13vh + 20px);
+  margin-bottom: 10vh;
+}
