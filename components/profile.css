@@ -37,11 +37,11 @@ h3 {
 }
 
 .about-me-and-counter__counter-section__counter {
-  border: 2px solid #183a1d;
+  border: 2px solid var(--button-color);
   padding: 5px 10px;
   width: 30vw;
-  background-color: #e1eedd;
-  color: #183a1d;
+  background-color: var(--card-background-color);
+  color: var(--button-color);
   border-radius: 10px;
   display: flex;
   justify-content: space-around;
@@ -49,9 +49,9 @@ h3 {
 }
 
 .about-me-and-counter__counter-section__counter.dark {
-  border: 2px solid #e1eedd;
-  background-color: #183a1d;
-  color: #e1eedd;
+  border: 2px solid var(--card-background-color);
+  background-color: var(--button-color);
+  color: var(--card-background-color);
 }
 
 .about-me-and-counter__counter-section__counter--placeholder {

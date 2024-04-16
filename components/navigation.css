@@ -2,13 +2,13 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #f6c453;
+  background-color: var(--header-color);
   z-index: 1;
 }
 
 footer.dark {
-  background-color: black;
-  color: #f6c453;
+  background-color: var(--header-color-dark);
+  color: var(--header-color);
 }
 
 .footer__navbar {
@@ -29,14 +29,14 @@ footer.dark {
 }
 
 .footer__navbar__nav-li-element:hover {
-  background-color: #f0a04b;
-  border: 2px solid white;
+  background-color: var(--highlight-color);
+  border: 2px solid #fff;
   border-radius: 10px;
 }
 
 .footer__navbar__nav-li-element.dark:hover {
-  background-color: grey;
-  border: 2px solid #f0a04b;
+  background-color: var(--background-color-dark);
+  border: 2px solid var(--highlight-color);
   border-radius: 10px;
 }
 
@@ -49,10 +49,10 @@ footer.dark {
 }
 
 .footer__navbar__nav-li-element__link--active {
-  background-color: #f0a04b;
+  background-color: var(--highlight-color);
   border-radius: 10px;
 }
 
 .footer__navbar__nav-li-element__link--active.dark {
-  background-color: grey;
+  background-color: var(--background-color-dark);
 }

@@ -4,13 +4,13 @@
 }
 
 body {
-  background-color: #fefbe9;
+  background-color: var(--background-color);
   font-family: "PT Serif";
 }
 
 body.dark {
-  background-color: black;
-  color: #fefbe9;
+  background-color: var(--background-color-dark);
+  color: var(--background-color);
 }
 
 main {

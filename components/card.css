@@ -1,10 +1,10 @@
 .card {
   margin: 20px 0;
-  border: 2px solid black;
+  border: 2px solid #000;
   padding: 10px;
   position: relative;
   text-align: center;
-  background-color: #e1eedd;
+  background-color: var(--card-background-color);
   border-radius: 10px;
 }
 
@@ -31,17 +31,17 @@
 
 .card__show-hide-button {
   margin: 0 auto;
-  border: 2px solid black;
+  border: 2px solid #000;
   padding: 10px 20px;
   width: fit-content;
-  background-color: #183a1d;
-  color: #fefbe9;
+  background-color: var(--button-color);
+  color: var(--background-color);
   border-radius: 10px;
 }
 
 .card__show-hide-button:hover {
-  background-color: #f0a04b;
-  color: black;
+  background-color: var(--highlight-color);
+  color: #000;
   font-weight: bold;
 }
 
@@ -60,7 +60,7 @@
 .card__answer__code-block {
   padding: 7px;
   margin: 5px;
-  background-color: #d3d3d3;
+  background-color: var(--codeblock-color);
   width: fit-content;
   margin: 0 auto;
   border-radius: 10px;
@@ -73,10 +73,10 @@
 }
 
 .card__hashtags__tag {
-  border: 2px solid #d3d3d3;
+  border: 2px solid var(--codeblock-color);
   padding: 5px;
   margin: 3px;
-  background-color: #fefbe9;
+  background-color: var(--background-color);
   border-radius: 10px;
   font-size: smaller;
   margin-top: 30px;
