@@ -1,5 +1,3 @@
-/* neue Klassen nach BEM -> JavaScript anpassen! Achtung zB bei .footer.dark li:hover*/
-
 /* Dark Mode */
 
 /* check 1. in CSS verändertes Styling bei Hinzufügen von Klasse .dark  */
