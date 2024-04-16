@@ -18,20 +18,20 @@
   visibility: hidden;
 }
 
-img {
+.card__bookmark--icon {
   height: 36px;
   visibility: visible;
   z-index: 1;
 }
 
-.question {
+.card__question {
   margin: 30px 50px;
   line-height: 1.25em;
 }
 
-.show-hide {
+.card__show-hide-button {
   margin: 0 auto;
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 10px 20px;
   width: fit-content;
   background-color: #183a1d;
@@ -39,7 +39,7 @@ img {
   border-radius: 10px;
 }
 
-.show-hide:hover {
+.card__show-hide-button:hover {
   background-color: #f0a04b;
   color: black;
   font-weight: bold;
@@ -47,17 +47,17 @@ img {
 
 /* Sichtbarkeit von .answer durch Hinzufügen oder Entfernen von class="visible". Entsprechend muss dann auch der Text im Button verändert werden. */
 
-.answer {
+.card__answer {
   display: none;
   margin: 30px auto;
   line-height: 1.25em;
 }
 
-.answer.visible {
+.card__answer--visible {
   display: block;
 }
 
-.code-block {
+.card__answer__code-block {
   padding: 7px;
   margin: 5px;
   background-color: #d3d3d3;
@@ -66,13 +66,13 @@ img {
   border-radius: 10px;
 }
 
-.hashtags {
+.card__hashtags {
   display: flex;
   justify-content: flex-start;
   padding: 0;
 }
 
-.tag {
+.card__hashtags__tag {
   border: 2px solid #d3d3d3;
   padding: 5px;
   margin: 3px;
