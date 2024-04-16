@@ -1,3 +1,5 @@
+/* neue Klassen nach BEM -> JavaScript anpassen! Achtung zB bei .footer.dark li:hover*/
+
 /* Dark Mode */
 
 /* check 1. in CSS verändertes Styling bei Hinzufügen von Klasse .dark  */
@@ -10,6 +12,7 @@ const header = document.querySelector('[data-js="header"]');
 const counter = document.querySelector('[data-js="counter"]');
 const footer = document.querySelector('[data-js="footer"]');
 const navbar = document.querySelector('[data-js="navbar"]');
+const navbarElement = document.querySelector('[data-js="navbar-element"]');
 const active = document.querySelector('[data-js="active"]');
 
 const slider = document.querySelector('[data-js="slider"]');
@@ -23,6 +26,7 @@ slider.addEventListener("click", () => {
   counter.classList.toggle("dark");
   footer.classList.toggle("dark");
   navbar.classList.toggle("dark");
+  navbarElement.classList.toggle("dark");
   active.classList.toggle("dark");
 });
 

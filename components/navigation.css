@@ -11,7 +11,7 @@ footer.dark {
   color: #f6c453;
 }
 
-.navbar {
+.footer__navbar {
   height: 10vh;
   display: flex;
   list-style: none;
@@ -20,7 +20,7 @@ footer.dark {
   align-items: center;
 }
 
-.navbar li {
+.footer__navbar__nav-li-element {
   height: 80%;
   width: 30%;
   display: flex;
@@ -28,19 +28,19 @@ footer.dark {
   align-items: center;
 }
 
-.navbar li:hover {
+.footer__navbar__nav-li-element:hover {
   background-color: #f0a04b;
   border: 2px solid white;
   border-radius: 10px;
 }
 
-.navbar.dark li:hover {
+.footer__navbar__nav-li-element.dark:hover {
   background-color: grey;
   border: 2px solid #f0a04b;
   border-radius: 10px;
 }
 
-.navbar li a {
+.footer__navbar__nav-li-element__link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -48,11 +48,11 @@ footer.dark {
   align-items: center;
 }
 
-.active {
+.footer__navbar__nav-li-element__link--active {
   background-color: #f0a04b;
   border-radius: 10px;
 }
 
-.active.dark {
+.footer__navbar__nav-li-element__link--active.dark {
   background-color: grey;
 }
