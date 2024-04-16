@@ -5,6 +5,7 @@
 
 body {
   background-color: #fefbe9;
+  font-family: "PT Serif";
 }
 
 body.dark {
@@ -12,13 +13,7 @@ body.dark {
   color: #fefbe9;
 }
 
-p,
-button,
-div {
-  font-family: "PT Serif";
-}
-
 main {
   margin-top: calc(13vh + 20px);
-  margin-bottom: 10vh;
+  margin-bottom: calc(10vh + 20px);
 }

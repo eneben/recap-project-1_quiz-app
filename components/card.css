@@ -8,13 +8,13 @@
   border-radius: 10px;
 }
 
-.bookmark {
+.card__bookmark {
   position: absolute;
   top: -15px;
   right: 10px;
 }
 
-.hidden {
+.card__bookmark--hidden {
   visibility: hidden;
 }
 
