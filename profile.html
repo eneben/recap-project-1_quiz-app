@@ -11,49 +11,67 @@
     <header data-js="header">
       <h1>Quiz App</h1>
     </header>
-    <main class="profile-main">
+    <main>
       <section class="user">
-        <img class="profile-pic" src="./css/pictures/profile-picture.png" />
-        <div class="name-box">
-          <h2>Miri Mustergiraffe</h2>
-        </div>
+        <img class="user__image" src="./css/pictures/profile-picture.png" />
+        <h2 class="user__name">Miri Mustergiraffe</h2>
       </section>
       <section class="about-me-and-counter">
         <h3>About me</h3>
-        <p>
+        <p class="about-me-and-counter__text">
           Moin! Ich bin Miri Mustergiraffe, die quizzlige Quasselstrippe. Mit
           meinem langen Hals habe ich nicht nur den Überblick über
           Programmieraufgaben, sondern auch den besten Blick für Lösungen. Ich
           bringe Farbe in die Welt des Codens!
-          <span class="emoticon"
+          <span
             ><img
+              class="about-me-and-counter__emoticon"
               src="./css/pictures/Rainbow_Emoji.png"
               alt="a rainbow emoticon"
           /></span>
         </p>
         <h3>Created questions and bookmarks</h3>
-        <div class="counter-section">
-          <div class="counter question-count" data-js="counter">
+        <div class="about-me-and-counter__counter-section">
+          <div
+            class="about-me-and-counter__counter-section__counter"
+            data-js="counter"
+          >
             <img src="./icons/questions.svg" alt="a question icon" />
-            <p class="counter-placeholder">3</p>
+            <p
+              class="about-me-and-counter__counter-section__counter--placeholder"
+            >
+              3
+            </p>
           </div>
-          <div class="counter bookmark-count" data-js="counter">
+          <div
+            class="about-me-and-counter__counter-section__counter"
+            data-js="counter"
+          >
             <img
               src="./icons/bookmark-dark-green.svg"
               alt="a marked bookmark icon"
             />
-            <p class="counter-placeholder">1</p>
+            <p
+              class="about-me-and-counter__counter-section__counter--placeholder"
+            >
+              1
+            </p>
           </div>
         </div>
       </section>
       <section class="settings">
         <h3>Settings</h3>
-        <div class="darkmode-flex">
+        <div class="darkmode--flex">
           <p>Dark Mode</p>
-          <div class="darkmode">
-            <label for="checkbox" class="slider-label">
-              <input type="checkbox" id="checkbox" data-js="slider" />
-              <div class="slider"></div>
+          <div>
+            <label for="checkbox" class="darkmode__slider-label">
+              <input
+                type="checkbox"
+                id="checkbox"
+                class="darkmode__slider-label__checkbox"
+                data-js="slider"
+              />
+              <div class="darkmode__slider-label__slider"></div>
               <!--<div class="slider-content"></div>
               Hier könnte ich später versuchen dem Slider Mond- und Sonne-Icons hinzuzufügen. -->
             </label>
@@ -63,21 +81,26 @@
     </main>
     <footer data-js="footer">
       <nav>
-        <ul class="navbar" data-js="navbar">
-          <li>
-            <a href="./index.html"
+        <ul class="footer__navbar" data-js="navbar">
+          <li class="footer__navbar__nav-li-element" data-js="navbar-element">
+            <a class="footer__navbar__nav-li-element__link" href="./index.html"
               ><img src="./icons/home.svg" alt="an active home icon"
             /></a>
           </li>
-          <li>
-            <a href="./bookmarks.html"
+          <li class="footer__navbar__nav-li-element" data-js="navbar-element">
+            <a
+              class="footer__navbar__nav-li-element__link"
+              href="./bookmarks.html"
               ><img
                 src="./icons/bookmarks-folder.svg"
                 alt="an unmarked bookmarks-folder icon"
             /></a>
           </li>
-          <li>
-            <a href="./profile.html" class="active" data-js="active"
+          <li class="footer__navbar__nav-li-element" data-js="navbar-element">
+            <a
+              class="footer__navbar__nav-li-element__link footer__navbar__nav-li-element__link--active"
+              href="./profile.html"
+              data-js="active"
               ><img src="./icons/profile.svg" alt="an unmarked profile icon"
             /></a>
           </li>

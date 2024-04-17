@@ -12,19 +12,22 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <!--second card-->
       <section class="card">
-        <button class="bookmark hidden">
-          <img src="./icons/bookmark-marked.svg" alt="a marked bookmark icon" />
+        <button class="card__bookmark card__bookmark--hidden">
+          <img
+            class="card__bookmark--icon"
+            src="./icons/bookmark-marked.svg"
+            alt="a marked bookmark icon"
+          />
         </button>
-        <p class="question">How to create a code block in markdown?</p>
-        <button class="show-hide">Hide Answer</button>
-        <div class="answer visible">
+        <p class="card__question">How to create a code block in markdown?</p>
+        <button class="card__show-hide-button">Hide Answer</button>
+        <div class="card__answer card__answer--visible">
           <p>
             A code block is created with three backticks before and after the
             code:
           </p>
-          <div class="code-block">
+          <div class="card__answer__code-block">
             <code
               >```<br />
               code <br />
@@ -32,32 +35,39 @@
             >
           </div>
         </div>
-        <ul class="hashtags">
-          <li class="tag">#markdown</li>
-          <li class="tag">#formatting</li>
-          <li class="tag">#codeblock</li>
+        <ul class="card__hashtags">
+          <li class="card__hashtags__tag">#markdown</li>
+          <li class="card__hashtags__tag">#formatting</li>
+          <li class="card__hashtags__tag">#codeblock</li>
         </ul>
       </section>
     </main>
     <footer>
       <nav>
-        <ul class="navbar">
-          <li>
-            <a href="./index.html"
-              ><img src="./icons/home.svg" alt="an active home icon"
-            /></a>
+        <ul class="footer__navbar">
+          <li class="footer__navbar__nav-li-element">
+            <a class="footer__navbar__nav-li-element__link" href="./index.html">
+              <img src="./icons/home.svg" alt="an active home icon" />
+            </a>
           </li>
-          <li>
-            <a href="./bookmarks.html" class="active"
-              ><img
+          <li class="footer__navbar__nav-li-element">
+            <a
+              class="footer__navbar__nav-li-element__link footer__navbar__nav-li-element__link--active"
+              href="./bookmarks.html"
+            >
+              <img
                 src="./icons/bookmarks-folder.svg"
                 alt="an unmarked bookmarks-folder icon"
-            /></a>
+              />
+            </a>
           </li>
-          <li>
-            <a href="./profile.html"
-              ><img src="./icons/profile.svg" alt="an unmarked profile icon"
-            /></a>
+          <li class="footer__navbar__nav-li-element">
+            <a
+              class="footer__navbar__nav-li-element__link"
+              href="./profile.html"
+            >
+              <img src="./icons/profile.svg" alt="an unmarked profile icon" />
+            </a>
           </li>
         </ul>
       </nav>

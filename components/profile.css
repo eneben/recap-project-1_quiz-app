@@ -1,20 +1,15 @@
-.profile-main {
-  padding: 30px 20px;
-  margin-top: 13vh;
-}
-
 .user {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.name-box h2 {
+.user__name {
   position: relative;
   top: -20px;
 }
 
-.profile-pic {
+.user__image {
   width: 100px;
   height: auto;
   border-radius: 30px;
@@ -24,41 +19,41 @@ h3 {
   padding: 15px 0 8px 0;
 }
 
-.about-me-and-counter p {
+.about-me-and-counter__text {
   font-size: 0.9em;
 }
 
-.emoticon img {
+.about-me-and-counter__emoticon {
   padding-left: 4px;
   transform: scaleX(-1);
   height: 0.9em;
 }
 
-.counter-section {
+.about-me-and-counter__counter-section {
   padding: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.counter {
-  border: 2px solid #183a1d;
+.about-me-and-counter__counter-section__counter {
+  border: 2px solid var(--button-color);
   padding: 5px 10px;
   width: 30vw;
-  background-color: #e1eedd;
-  color: #183a1d;
+  background-color: var(--card-background-color);
+  color: var(--button-color);
   border-radius: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.counter.dark {
-  border: 2px solid #e1eedd;
-  background-color: #183a1d;
-  color: #e1eedd;
+.about-me-and-counter__counter-section__counter.dark {
+  border: 2px solid var(--card-background-color);
+  background-color: var(--button-color);
+  color: var(--card-background-color);
 }
 
-.counter-placeholder {
+.about-me-and-counter__counter-section__counter--placeholder {
   font-weight: bold;
 }

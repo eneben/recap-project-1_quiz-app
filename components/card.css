@@ -1,82 +1,82 @@
 .card {
-  margin: 20px;
-  border: 2px solid black;
+  margin: 20px 0;
+  border: 2px solid #000;
   padding: 10px;
   position: relative;
   text-align: center;
-  background-color: #e1eedd;
+  background-color: var(--card-background-color);
   border-radius: 10px;
 }
 
-.bookmark {
+.card__bookmark {
   position: absolute;
   top: -15px;
   right: 10px;
 }
 
-.hidden {
+.card__bookmark--hidden {
   visibility: hidden;
 }
 
-img {
+.card__bookmark--icon {
   height: 36px;
   visibility: visible;
   z-index: 1;
 }
 
-.question {
+.card__question {
   margin: 30px 50px;
   line-height: 1.25em;
 }
 
-.show-hide {
+.card__show-hide-button {
   margin: 0 auto;
-  border: 1px solid black;
+  border: 2px solid #000;
   padding: 10px 20px;
   width: fit-content;
-  background-color: #183a1d;
-  color: #fefbe9;
+  background-color: var(--button-color);
+  color: var(--background-color);
   border-radius: 10px;
 }
 
-.show-hide:hover {
-  background-color: #f0a04b;
-  color: black;
+.card__show-hide-button:hover {
+  background-color: var(--highlight-color);
+  color: #000;
   font-weight: bold;
 }
 
 /* Sichtbarkeit von .answer durch Hinzufügen oder Entfernen von class="visible". Entsprechend muss dann auch der Text im Button verändert werden. */
 
-.answer {
+.card__answer {
   display: none;
   margin: 30px auto;
   line-height: 1.25em;
 }
 
-.answer.visible {
+.card__answer--visible {
   display: block;
 }
 
-.code-block {
+.card__answer__code-block {
   padding: 7px;
   margin: 5px;
-  background-color: #d3d3d3;
+  background-color: var(--codeblock-color);
   width: fit-content;
   margin: 0 auto;
   border-radius: 10px;
 }
 
-.hashtags {
+.card__hashtags {
   display: flex;
   justify-content: flex-start;
   padding: 0;
 }
 
-.tag {
-  border: 2px solid #d3d3d3;
+.card__hashtags__tag {
+  border: 2px solid var(--codeblock-color);
   padding: 5px;
   margin: 3px;
-  background-color: #fefbe9;
+  background-color: var(--background-color);
   border-radius: 10px;
   font-size: smaller;
   margin-top: 30px;

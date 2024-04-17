@@ -1,35 +1,36 @@
-.darkmode-flex {
+.darkmode--flex {
   display: flex;
   justify-content: flex-start;
   gap: 40px;
   align-items: center;
 }
 
-.slider-label {
+.darkmode__slider-label {
   position: relative;
   display: inline-block;
   height: 34px;
   width: 60px;
 }
 
-#checkbox {
+.darkmode__slider-label__checkbox {
   display: none;
 }
 
-.slider {
+.darkmode__slider-label__slider {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #183a1d;
+  background-color: var(--button-color);
   cursor: pointer;
   transition: 0.4s;
   border-radius: 34px;
 }
 
-.slider:before {
-  background-color: #e1eedd;
+.darkmode__slider-label__slider:before {
+  background-color: var(--card-background-color);
+  border-radius: 50%;
   bottom: 4px;
   height: 26px;
   left: 4px;
@@ -39,17 +40,13 @@
   content: "";
 }
 
-input:checked + .slider {
-  background-color: #f6c453;
+input:checked + .darkmode__slider-label__slider {
+  background-color: var(--header-color);
 }
 
-input:checked + .slider:before {
-  background-color: black;
+input:checked + .darkmode__slider-label__slider:before {
+  background-color: #000;
   transform: translateX(26px);
-}
-
-.slider:before {
-  border-radius: 50%;
 }
 
 /* Hier könnte ich versuchen dem Slider Mond- und Sonne-Icons hinzuzufügen.
