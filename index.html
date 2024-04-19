@@ -12,17 +12,17 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <section class="card">
-        <button class="card__bookmark card__bookmark--hidden">
+      <section aria-label="quiz-card" class="card">
+        <button aria-label="bookmark" class="card__bookmark card__bookmark--hidden">
           <img
             class="card__bookmark--icon"
             src="./icons/bookmark-unmarked.svg"
             alt="an unmarked bookmark icon"
           />
         </button>
-        <p class="card__question">How to center an element horizontally in CSS?</p>
-        <button class="card__show-hide-button" data-js="show-hide-button">Show Answer</button>
-        <div class="card__answer card__answer--visible" data-js="answer">
+        <p id="aria-question" class="card__question">How to center an element horizontally in CSS?</p>
+        <button aria-label="button" class="card__show-hide-button" data-js="show-hide-button">Show Answer</button>
+        <div class="card__answer card__answer--visible" data-js="answer" aria-labelledby="aria-question">
           <p>
             If it has a fixed width, an element can be centered horizontal with
           </p>
@@ -30,13 +30,13 @@
             <code>margin: 0 auto;</code>
           </div>
         </div>
-        <ul class="card__hashtags">
+        <ul aria-label="relating hashtags to this card" class="card__hashtags">
           <li class="card__hashtags__tag">#css</li>
           <li class="card__hashtags__tag">#positioning</li>
           <li class="card__hashtags__tag">#frontend</li>
         </ul>
       </section>
-      <section class="card">
+      <section aria-label="quiz-card" class="card">
         <button class="card__bookmark card__bookmark--hidden">
           <img 
             class="card__bookmark--icon" 
@@ -65,7 +65,7 @@
           <li class="card__hashtags__tag">#codeblock</li>
         </ul>
       </section>
-      <section class="card">
+      <section aria-label="quiz-card" class="card">
         <button class="card__bookmark card__bookmark--hidden">
           <img
             class="card__bookmark--icon"
