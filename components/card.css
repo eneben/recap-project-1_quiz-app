@@ -6,6 +6,7 @@
   text-align: center;
   background-color: var(--card-background-color);
   border-radius: 10px;
+  font-size: var(--medium);
 }
 
 .card__bookmark {
@@ -78,7 +79,7 @@
   margin: 3px;
   background-color: var(--background-color);
   border-radius: 10px;
-  font-size: smaller;
+  font-size: var(--small);
   margin-top: 30px;
   list-style: none;
 }
