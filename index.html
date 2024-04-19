@@ -37,16 +37,16 @@
         </ul>
       </section>
       <section aria-label="quiz-card" class="card">
-        <button class="card__bookmark card__bookmark--hidden">
+        <button aria-label="bookmark" class="card__bookmark card__bookmark--hidden">
           <img 
             class="card__bookmark--icon" 
             src="./icons/bookmark-marked.svg" 
             alt="a marked bookmark icon" 
           />
         </button>
-        <p class="card__question">How to create a code block in markdown?</p>
-        <button class="card__show-hide-button" data-js="show-hide-button">Hide Answer</button>
-        <div class="card__answer " data-js="answer">
+        <p id="aria-question" class="card__question">How to create a code block in markdown?</p>
+        <button aria-label="button" class="card__show-hide-button" data-js="show-hide-button">Hide Answer</button>
+        <div class="card__answer " data-js="answer" aria-labelledby="aria-question">
           <p>
             A code block is created with three backticks before and after the
             code:
@@ -59,29 +59,29 @@
             >
           </div>
         </div>
-        <ul class="card__hashtags">
+        <ul class="card__hashtags" aria-label="relating hashtags to this card" >
           <li class="card__hashtags__tag">#markdown</li>
           <li class="card__hashtags__tag">#formatting</li>
           <li class="card__hashtags__tag">#codeblock</li>
         </ul>
       </section>
       <section aria-label="quiz-card" class="card">
-        <button class="card__bookmark card__bookmark--hidden">
+        <button aria-label="bookmark" class="card__bookmark card__bookmark--hidden">
           <img
             class="card__bookmark--icon"
             src="./icons/bookmark-unmarked.svg"
             alt="an unmarked bookmark icon"
           />
         </button>
-        <p class="card__question">How to create a new branch in Git?</p>
-        <button class="card__show-hide-button" data-js="show-hide-button">Hide Answer</button>
-        <div class="card__answer card__answer--visible" data-js="answer">
+        <p id="aria-question" class="card__question">How to create a new branch in Git?</p>
+        <button aria-label="button" class="card__show-hide-button" data-js="show-hide-button">Hide Answer</button>
+        <div class="card__answer card__answer--visible" data-js="answer" aria-labelledby="aria-question">
           <p>A new branch is created with the command</p>
           <div class="card__answer__code-block">
             <code>git checkout -b &lt;branch-name&gt;</code>
           </div>
         </div>
-        <ul class="card__hashtags">
+        <ul class="card__hashtags" aria-label="relating hashtags to this card" >
           <li class="card__hashtags__tag">#git</li>
           <li class="card__hashtags__tag">#branch</li>
           <li class="card__hashtags__tag">#repository</li>
@@ -89,22 +89,25 @@
       </section>
     </main>
     <footer>
-      <nav>
+      <nav aria-label="navigation bar">
         <ul class="footer__navbar">
           <li class="footer__navbar__nav-li-element">
-            <a class="footer__navbar__nav-li-element__link footer__navbar__nav-li-element__link--active" href="./index.html">
-              <img src="./icons/home.svg" alt="an active home icon"/>
+            <a aria-labelledby="aria-home" class="footer__navbar__nav-li-element__link footer__navbar__nav-li-element__link--active" href="./index.html">
+              <img src="./icons/home.svg" alt="an active home icon" aria-hidden="true"/>
             </a>
+            <span id="aria-home" class="sr-only">home page</span>
           </li>
           <li class="footer__navbar__nav-li-element">
-            <a class="footer__navbar__nav-li-element__link" href="./bookmarks.html">
-              <img src="./icons/bookmarks-folder.svg" alt="an unmarked bookmarks-folder icon"/>
+            <a aria-labelledby="aria-bookmarks-page" class="footer__navbar__nav-li-element__link" href="./bookmarks.html">
+              <img src="./icons/bookmarks-folder.svg" alt="an unmarked bookmarks-folder icon"  aria-hidden="true"/>
             </a>
+            <span id="aria-bookmarks-page" class="sr-only">bookmarks page</span>
           </li>
           <li class="footer__navbar__nav-li-element">
-            <a class="footer__navbar__nav-li-element__link" href="./profile.html">
-              <img  src="./icons/profile.svg" alt="an unmarked profile icon"/>
+            <a aria-labelledby="aria-profile-page" class="footer__navbar__nav-li-element__link" href="./profile.html">
+              <img  src="./icons/profile.svg" alt="an unmarked profile icon" aria-hidden="true"/>
             </a>
+            <span id="aria-profile-page" class="sr-only">profile page</span>
           </li>
         </ul>
       </nav>

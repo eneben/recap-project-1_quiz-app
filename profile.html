@@ -80,29 +80,44 @@
       </section>
     </main>
     <footer data-js="footer">
-      <nav>
+      <nav aria-label="navigation bar">
         <ul class="footer__navbar" data-js="navbar">
           <li class="footer__navbar__nav-li-element" data-js="navbar-element">
-            <a class="footer__navbar__nav-li-element__link" href="./index.html"
-              ><img src="./icons/home.svg" alt="an active home icon"
+            <a
+              aria-labelledby="aria-home"
+              class="footer__navbar__nav-li-element__link"
+              href="./index.html"
+              ><img
+                src="./icons/home.svg"
+                alt="an active home icon"
+                aria-hidden="true"
             /></a>
+            <span id="aria-home" class="sr-only">home page</span>
           </li>
           <li class="footer__navbar__nav-li-element" data-js="navbar-element">
             <a
+              aria-labelledby="aria-bookmarks-page"
               class="footer__navbar__nav-li-element__link"
               href="./bookmarks.html"
               ><img
                 src="./icons/bookmarks-folder.svg"
                 alt="an unmarked bookmarks-folder icon"
+                aria-hidden="true"
             /></a>
+            <span id="aria-bookmarks-page" class="sr-only">bookmarks page</span>
           </li>
           <li class="footer__navbar__nav-li-element" data-js="navbar-element">
             <a
+              aria-labelledby="aria-profile-page"
               class="footer__navbar__nav-li-element__link footer__navbar__nav-li-element__link--active"
               href="./profile.html"
               data-js="active"
-              ><img src="./icons/profile.svg" alt="an unmarked profile icon"
+              ><img
+                src="./icons/profile.svg"
+                alt="an unmarked profile icon"
+                aria-hidden="true"
             /></a>
+            <span id="aria-profile-page" class="sr-only">profile page</span>
           </li>
         </ul>
       </nav>
