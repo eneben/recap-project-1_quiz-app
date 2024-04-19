@@ -13,7 +13,11 @@
     </header>
     <main>
       <section class="user">
-        <img class="user__image" src="./css/pictures/profile-picture.png" />
+        <img
+          class="user__image"
+          src="./css/pictures/profile-picture.png"
+          alt="a picture of a giraffe with a colorful scarf"
+        />
         <h2 class="user__name">Miri Mustergiraffe</h2>
       </section>
       <section class="about-me-and-counter">
@@ -32,37 +36,46 @@
         </p>
         <h3>Created questions and bookmarks</h3>
         <div class="about-me-and-counter__counter-section">
-          <div
+          <span
             class="about-me-and-counter__counter-section__counter"
             data-js="counter"
+            aria-label="a counter for added questions"
           >
-            <img src="./icons/questions.svg" alt="a question icon" />
+            <img
+              src="./icons/questions.svg"
+              alt="icon representing the number of questions added"
+            />
             <p
               class="about-me-and-counter__counter-section__counter--placeholder"
             >
               3
             </p>
-          </div>
-          <div
+          </span>
+          <span
             class="about-me-and-counter__counter-section__counter"
             data-js="counter"
+            aria-label="a counter for bookmarked question-cards"
           >
             <img
               src="./icons/bookmark-dark-green.svg"
-              alt="a marked bookmark icon"
+              alt="icon representing the number of bookmarked question-cards"
             />
             <p
               class="about-me-and-counter__counter-section__counter--placeholder"
             >
               1
             </p>
-          </div>
+          </span>
         </div>
       </section>
       <section class="settings">
         <h3>Settings</h3>
         <div class="darkmode--flex">
-          <p>Dark Mode</p>
+          <p id="aria-dark">
+            Dark Mode<span class="sr-only"
+              >Activate to switch to a dark mode</span
+            >
+          </p>
           <div>
             <label for="checkbox" class="darkmode__slider-label">
               <input
@@ -70,6 +83,7 @@
                 id="checkbox"
                 class="darkmode__slider-label__checkbox"
                 data-js="slider"
+                aria-labelledby="aria-dark"
               />
               <div class="darkmode__slider-label__slider"></div>
               <!--<div class="slider-content"></div>
@@ -80,29 +94,44 @@
       </section>
     </main>
     <footer data-js="footer">
-      <nav>
+      <nav aria-label="navigation bar">
         <ul class="footer__navbar" data-js="navbar">
           <li class="footer__navbar__nav-li-element" data-js="navbar-element">
-            <a class="footer__navbar__nav-li-element__link" href="./index.html"
-              ><img src="./icons/home.svg" alt="an active home icon"
+            <a
+              aria-labelledby="aria-home"
+              class="footer__navbar__nav-li-element__link"
+              href="./index.html"
+              ><img
+                src="./icons/home.svg"
+                alt="an active home icon"
+                aria-hidden="true"
             /></a>
+            <span id="aria-home" class="sr-only">home page</span>
           </li>
           <li class="footer__navbar__nav-li-element" data-js="navbar-element">
             <a
+              aria-labelledby="aria-bookmarks-page"
               class="footer__navbar__nav-li-element__link"
               href="./bookmarks.html"
               ><img
                 src="./icons/bookmarks-folder.svg"
                 alt="an unmarked bookmarks-folder icon"
+                aria-hidden="true"
             /></a>
+            <span id="aria-bookmarks-page" class="sr-only">bookmarks page</span>
           </li>
           <li class="footer__navbar__nav-li-element" data-js="navbar-element">
             <a
+              aria-labelledby="aria-profile-page"
               class="footer__navbar__nav-li-element__link footer__navbar__nav-li-element__link--active"
               href="./profile.html"
               data-js="active"
-              ><img src="./icons/profile.svg" alt="an unmarked profile icon"
+              ><img
+                src="./icons/profile.svg"
+                alt="an unmarked profile icon"
+                aria-hidden="true"
             /></a>
+            <span id="aria-profile-page" class="sr-only">profile page</span>
           </li>
         </ul>
       </nav>
