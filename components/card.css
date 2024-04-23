@@ -26,8 +26,8 @@
 }
 
 .card__question {
-  margin: 30px 50px;
-  line-height: 1.25em;
+  padding: 30px 50px;
+  line-height: 1.25rem;
 }
 
 .card__show-hide-button {
@@ -76,10 +76,9 @@
 .card__hashtags__tag {
   border: 2px solid var(--codeblock-color);
   padding: 5px;
-  margin: 3px;
+  margin: 30px 3px 3px 3px;
   background-color: var(--background-color);
   border-radius: 10px;
   font-size: var(--small);
-  margin-top: 30px;
   list-style: none;
 }
