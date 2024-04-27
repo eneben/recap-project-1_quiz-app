@@ -2,9 +2,12 @@
 
 @import "./variables.css";
 @import "./global.css";
+
 @import "../components/header.css";
 @import "../components/card.css";
 @import "../components/navigation.css";
 @import "../components/profile.css";
 @import "../components/darkmode.css";
 @import "../components/slider.css";
+
+@import "./media-queries.css";

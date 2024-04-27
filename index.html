@@ -6,6 +6,8 @@
     <title>Quiz App</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="./javascript/index.js" defer></script>
+    <link rel="icon" href="./icons/favicon.svg">
+
   </head>
   <body>
     <header>
@@ -20,9 +22,9 @@
             alt="an unmarked bookmark icon"
           />
         </button>
-        <p id="aria-question" class="card__question">How to center an element horizontally in CSS?</p>
-        <button aria-label="button" class="card__show-hide-button" data-js="show-hide-button">Show Answer</button>
-        <div class="card__answer card__answer--visible" data-js="answer" aria-labelledby="aria-question">
+        <p id="aria-question1" class="card__question">How to center an element horizontally in CSS?</p>
+        <button aria-label="button" class="card__show-hide-button" data-js="show-hide-button">Hide Answer</button>
+        <div class="card__answer card__answer--visible" data-js="answer" aria-labelledby="aria-question1">
           <p>
             If it has a fixed width, an element can be centered horizontal with
           </p>
@@ -37,16 +39,16 @@
         </ul>
       </section>
       <section aria-label="quiz-card" class="card">
-        <button aria-label="bookmark for the quiz-card" class="card__bookmark card__bookmark--hidden">
+        <button aria-label="bookmark for the quiz-card" class="card__bookmark card__bookmark--hidden" >
           <img 
             class="card__bookmark--icon" 
             src="./icons/bookmark-marked.svg" 
             alt="a marked bookmark icon" 
           />
         </button>
-        <p id="aria-question" class="card__question">How to create a code block in markdown?</p>
-        <button aria-label="button" class="card__show-hide-button" data-js="show-hide-button">Hide Answer</button>
-        <div class="card__answer " data-js="answer" aria-labelledby="aria-question">
+        <p id="aria-question2" class="card__question">How to create a code block in markdown?</p>
+        <button aria-label="button" class="card__show-hide-button" data-js="show-hide-button">Show Answer</button>
+        <div class="card__answer"  data-js="answer"  aria-labelledby="aria-question2">
           <p>
             A code block is created with three backticks before and after the
             code:
@@ -73,12 +75,12 @@
             alt="an unmarked bookmark icon"
           />
         </button>
-        <p id="aria-question" class="card__question">How to create a new branch in Git?</p>
+        <p id="aria-question3" class="card__question">How to create a new branch in Git?</p>
         <button aria-label="button" class="card__show-hide-button" data-js="show-hide-button">Hide Answer</button>
-        <div class="card__answer card__answer--visible" data-js="answer" aria-labelledby="aria-question">
+        <div class="card__answer card__answer--visible" data-js="answer"  aria-labelledby="aria-question3">
           <p>A new branch is created with the command</p>
           <div class="card__answer__code-block">
-            <code>git checkout -b &lt;branch-name&gt;</code>
+            <code>git switch -c &lt;branch-name&gt;</code>
           </div>
         </div>
         <ul class="card__hashtags" aria-label="relating hashtags to this card" >

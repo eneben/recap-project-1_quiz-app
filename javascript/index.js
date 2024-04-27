@@ -5,43 +5,49 @@
 /* 3. if Klasse=dark in classList, dann Icons anderer Pfad (nämlich weiße bzw. hellgrüne) */
 /* 4. gleiches Vorgehen für die anderen Seiten (erst mal nur profile.html) */
 
-const body = document.querySelector('[data-js="body"]');
-const header = document.querySelector('[data-js="header"]');
-const counter = document.querySelector('[data-js="counter"]');
-const footer = document.querySelector('[data-js="footer"]');
-const navbar = document.querySelector('[data-js="navbar"]');
-const navbarElement = document.querySelector('[data-js="navbar-element"]');
-const active = document.querySelector('[data-js="active"]');
+// const body = document.querySelector('[data-js="body"]');
+// const header = document.querySelector('[data-js="header"]');
+// const counter = document.querySelector('[data-js="counter"]');
+// const footer = document.querySelector('[data-js="footer"]');
+// const navbar = document.querySelector('[data-js="navbar"]');
+// const navbarElement = document.querySelector('[data-js="navbar-element"]');
+// const active = document.querySelector('[data-js="active"]');
 
-const slider = document.querySelector('[data-js="slider"]');
+// const slider = document.querySelector('[data-js="slider"]');
 
-console.log(slider);
+// console.log(slider);
 
-slider.addEventListener("click", () => {
-  console.log("event");
-  body.classList.toggle("dark");
-  header.classList.toggle("dark");
-  counter.classList.toggle("dark");
-  footer.classList.toggle("dark");
-  navbar.classList.toggle("dark");
-  navbarElement.classList.toggle("dark");
-  active.classList.toggle("dark");
-});
+// slider.addEventListener("click", () => {
+//   console.log("event");
+//   body.classList.toggle("dark");
+//   header.classList.toggle("dark");
+//   counter.classList.toggle("dark");
+//   footer.classList.toggle("dark");
+//   navbar.classList.toggle("dark");
+//   navbarElement.classList.toggle("dark");
+//   active.classList.toggle("dark");
+// });
 
 /* Toggle Button auf index.html */
 
-const answerButton = document.querySelector('[data-js="show-hide-button"]');
+const answerButtonList = document.querySelectorAll(
+  '[data-js="show-hide-button"]'
+);
 
-const answer = document.querySelector('[data-js="answer"]');
+answerButtonList.forEach((itemButton) => {
+  itemButton.addEventListener("click", (event) => {
+    console.log("button clicked");
+    console.log("This button was clicked:", event.target);
 
-answerButton.addEventListener("click", () => {
-  console.log("button clicked");
+    const parentCard = event.target.closest(".card");
+    const answer = parentCard.querySelector('[data-js="answer"]');
 
-  answer.classList.toggle("visible");
+    answer.classList.toggle("card__answer--visible");
 
-  if (answer.classList.contains("visible")) {
-    answerButton.textContent = "Hide Answer";
-  } else {
-    answerButton.textContent = "Show Answer";
-  }
+    if (answer.classList.contains("card__answer--visible")) {
+      itemButton.textContent = "Hide Answer";
+    } else {
+      itemButton.textContent = "Show Answer";
+    }
+  });
 });

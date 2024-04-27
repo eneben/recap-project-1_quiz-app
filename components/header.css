@@ -17,4 +17,5 @@ header.dark {
 
 h1 {
   font-family: "PT Sans";
+  font-size: var(--large);
 }
