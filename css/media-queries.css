@@ -8,6 +8,14 @@
   .user {
     justify-content: space-around;
   }
+
+  .user__image {
+    width: 18.75rem;
+  }
+
+  h3 {
+    padding-top: 30px;
+  }
 }
 
 /* media-query for desktop */
