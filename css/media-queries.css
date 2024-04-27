@@ -1,0 +1,9 @@
+/* media-query for tablet */
+@media screen and (min-width: 56.25rem) {
+  main {
+    max-width: 46.875rem;
+  }
+}
+
+/* media-query for desktop */
+@media screen and (min-width: 75rem);
