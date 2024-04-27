@@ -2,6 +2,7 @@
 
 @import "./variables.css";
 @import "./global.css";
+@import "./media-queries.css";
 
 @import "../components/header.css";
 @import "../components/card.css";

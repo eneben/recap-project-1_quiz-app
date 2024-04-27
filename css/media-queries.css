@@ -2,6 +2,11 @@
 @media screen and (min-width: 56.25rem) {
   main {
     max-width: 46.875rem;
+    margin: calc(13vh + 20px) auto calc(10vh + 20px) auto;
+  }
+
+  .user {
+    justify-content: space-around;
   }
 }
 
