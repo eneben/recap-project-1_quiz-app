@@ -41,7 +41,7 @@ h3 {
 .about-me-and-counter__counter-section__counter {
   border: 2px solid var(--button-color);
   padding: 5px 10px;
-  width: 30vw;
+  width: 30%;
   background-color: var(--card-background-color);
   color: var(--button-color);
   border-radius: 10px;

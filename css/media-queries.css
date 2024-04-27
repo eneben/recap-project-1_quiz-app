@@ -1,22 +1,42 @@
-/* media-query for tablet */
+@media screen and (min-width: 37.5rem) {
+  .user {
+    justify-content: space-around;
+  }
+  .user__image {
+    width: 15.625rem;
+  }
+  h3 {
+    padding-top: 1.875rem;
+  }
+
+  .about-me-and-counter__counter-section__counter {
+    padding: 0.625rem 1.25rem;
+  }
+}
+
 @media screen and (min-width: 56.25rem) {
   main {
     max-width: 46.875rem;
     margin: calc(13vh + 20px) auto calc(10vh + 20px) auto;
   }
-
-  .user {
-    justify-content: space-around;
+  .user__name {
+    font-size: 1.8rem;
   }
-
-  .user__image {
-    width: 18.75rem;
+  .card {
+    margin: 1.875rem auto;
   }
-
-  h3 {
-    padding-top: 30px;
+  .card__bookmark {
+    top: -1.25rem;
+    right: 3.125rem;
+  }
+  .card__bookmark--icon {
+    height: 2.625rem;
   }
 }
 
-/* media-query for desktop */
-@media screen and (min-width: 75rem);
+@media screen and (min-width: 75rem) {
+  .footer__navbar {
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+}
