@@ -15,21 +15,13 @@
     </header>
     <main>
       <section aria-label="quiz-card" class="card">
-        <button aria-label="bookmark for the quiz-card" class="card__bookmark card__bookmark--hidden">
-          <!-- <img
-            class="card__bookmark--icon"
-            src="./icons/bookmark-unmarked.svg"
-            alt="an unmarked bookmark icon"
-          /> -->
-
+        <button aria-label="bookmark for the quiz-card" class="card__bookmark">
           <svg class="card__bookmark--icon"
           alt="an unmarked bookmark icon"
-          xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M0 0h24v24H0z" fill="none"/>
             <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z" fill="#fefbe9" stroke="#f0a04b" stroke-width="2"/>
-            </svg>
-
-
+          </svg>
         </button>
         <p id="aria-question1" class="card__question">How to center an element horizontally in CSS?</p>
         <button aria-label="button" class="card__show-hide-button" data-js="show-hide-button">Hide Answer</button>
@@ -48,12 +40,11 @@
         </ul>
       </section>
       <section aria-label="quiz-card" class="card">
-        <button aria-label="bookmark for the quiz-card" class="card__bookmark card__bookmark--hidden" >
-          <img 
-            class="card__bookmark--icon" 
-            src="./icons/bookmark-marked.svg" 
-            alt="a marked bookmark icon" 
-          />
+        <button aria-label="bookmark for the quiz-card" class="card__bookmark" >
+          <svg class="card__bookmark--icon" alt="a marked bookmark icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z" fill="#f0a04b" stroke="#f0a04b" stroke-width="2" />
+          </svg>
         </button>
         <p id="aria-question2" class="card__question">How to create a code block in markdown?</p>
         <button aria-label="button" class="card__show-hide-button" data-js="show-hide-button">Show Answer</button>
@@ -77,12 +68,13 @@
         </ul>
       </section>
       <section aria-label="quiz-card" class="card">
-        <button aria-label="bookmark for the quiz-card" class="card__bookmark card__bookmark--hidden">
-          <img
-            class="card__bookmark--icon"
-            src="./icons/bookmark-unmarked.svg"
-            alt="an unmarked bookmark icon"
-          />
+        <button aria-label="bookmark for the quiz-card" class="card__bookmark">
+          <svg class="card__bookmark--icon"
+          alt="an unmarked bookmark icon"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z" fill="#fefbe9" stroke="#f0a04b" stroke-width="2"/>
+          </svg>
         </button>
         <p id="aria-question3" class="card__question">How to create a new branch in Git?</p>
         <button aria-label="button" class="card__show-hide-button" data-js="show-hide-button">Hide Answer</button>
@@ -104,19 +96,19 @@
         <ul class="footer__navbar">
           <li class="footer__navbar__nav-li-element">
             <a aria-labelledby="aria-home" class="footer__navbar__nav-li-element__link footer__navbar__nav-li-element__link--active" href="./index.html">
-              <img src="./icons/home.svg" alt="an active home icon" aria-hidden="true"/>
+              <svg aria-hidden="true" alt="home icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
             </a>
             <span id="aria-home" class="sr-only">home page</span>
           </li>
           <li class="footer__navbar__nav-li-element">
             <a aria-labelledby="aria-bookmarks-page" class="footer__navbar__nav-li-element__link" href="./bookmarks.html">
-              <img src="./icons/bookmarks-folder.svg" alt="an unmarked bookmarks-folder icon"  aria-hidden="true"/>
+              <svg alt="bookmarks-folder icon"  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 18l2 1V3c0-1.1-.9-2-2-2H8.99C7.89 1 7 1.9 7 3h10c1.1 0 2 .9 2 2v13zM15 5H5c-1.1 0-2 .9-2 2v16l7-3 7 3V7c0-1.1-.9-2-2-2z"/></svg>
             </a>
             <span id="aria-bookmarks-page" class="sr-only">bookmarks page</span>
           </li>
           <li class="footer__navbar__nav-li-element">
             <a aria-labelledby="aria-profile-page" class="footer__navbar__nav-li-element__link" href="./profile.html">
-              <img  src="./icons/profile.svg" alt="an unmarked profile icon" aria-hidden="true"/>
+              <svg alt="profile icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"/></g><g><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20z"/></g></svg>
             </a>
             <span id="aria-profile-page" class="sr-only">profile page</span>
           </li>
