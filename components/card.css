@@ -23,6 +23,18 @@
   z-index: 1;
 }
 
+.bookmark--unmarked {
+  fill: #fefbe9;
+  stroke: #f0a04b;
+  stroke-width: 2;
+}
+
+.bookmark--marked {
+  fill: #f0a04b;
+  stroke: #f0a04b;
+  stroke-width: 2;
+}
+
 .card__question {
   padding: 30px 50px;
   line-height: 1.25rem;
