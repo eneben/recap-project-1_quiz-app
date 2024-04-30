@@ -1,3 +1,29 @@
+/* Toggle Button auf index.html */
+
+const answerButtonList = document.querySelectorAll(
+  '[data-js="show-hide-button"]'
+);
+
+answerButtonList.forEach((itemButton) => {
+  itemButton.addEventListener("click", (event) => {
+    console.log("button clicked");
+    console.log("This button was clicked:", event.target);
+
+    const parentCard = event.target.closest(".card");
+    const answer = parentCard.querySelector('[data-js="answer"]');
+
+    answer.classList.toggle("card__answer--visible");
+
+    if (answer.classList.contains("card__answer--visible")) {
+      itemButton.textContent = "Hide Answer";
+    } else {
+      itemButton.textContent = "Show Answer";
+    }
+  });
+});
+
+/* Toggle Bookmark auf index.html */
+
 /* Dark Mode */
 
 /* check 1. in CSS verändertes Styling bei Hinzufügen von Klasse .dark  */
@@ -27,27 +53,3 @@
 //   navbarElement.classList.toggle("dark");
 //   active.classList.toggle("dark");
 // });
-
-/* Toggle Button auf index.html */
-
-const answerButtonList = document.querySelectorAll(
-  '[data-js="show-hide-button"]'
-);
-
-answerButtonList.forEach((itemButton) => {
-  itemButton.addEventListener("click", (event) => {
-    console.log("button clicked");
-    console.log("This button was clicked:", event.target);
-
-    const parentCard = event.target.closest(".card");
-    const answer = parentCard.querySelector('[data-js="answer"]');
-
-    answer.classList.toggle("card__answer--visible");
-
-    if (answer.classList.contains("card__answer--visible")) {
-      itemButton.textContent = "Hide Answer";
-    } else {
-      itemButton.textContent = "Show Answer";
-    }
-  });
-});
