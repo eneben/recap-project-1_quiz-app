@@ -49,21 +49,14 @@ input:checked + .darkmode__slider-label__slider:before {
   transform: translateX(26px);
 }
 
-/* Hier könnte ich versuchen dem Slider Mond- und Sonne-Icons hinzuzufügen.
-  
-  .slider-content {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 10px;
-    width: 20px;
-    height: 20px;
-    background-image: url("./icons/moon.svg");
-    background-size: cover;
-  }
-  
-  input:checked + .slider-content {
-    left: 30px;
-    background-image: url("./icons/sun.svg");
-  }
-  */
+.sun {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.moon {
+  position: absolute;
+  left: 32px;
+  top: 5px;
+}
