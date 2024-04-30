@@ -47,4 +47,18 @@
   }
 }
 
-@media;
+@media (pointer: coarse) {
+  .card__show-hide-button:active {
+    background-color: var(--highlight-color);
+    color: #000;
+    font-weight: bold;
+  }
+}
+
+@media (pointer: fine) {
+  .card__show-hide-button:hover {
+    background-color: var(--highlight-color);
+    color: #000;
+    font-weight: bold;
+  }
+}

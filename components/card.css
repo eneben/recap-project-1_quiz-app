@@ -38,14 +38,6 @@
   border-radius: 10px;
 }
 
-.card__show-hide-button:hover {
-  background-color: var(--highlight-color);
-  color: #000;
-  font-weight: bold;
-}
-
-/* Sichtbarkeit von .answer durch Hinzufügen oder Entfernen von class="visible". Entsprechend muss dann auch der Text im Button verändert werden. */
-
 .card__answer {
   display: none;
   margin: 30px auto;
