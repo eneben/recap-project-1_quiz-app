@@ -24,14 +24,14 @@
 }
 
 .bookmark--unmarked {
-  fill: #fefbe9;
-  stroke: #f0a04b;
+  fill: var(--background-color);
+  stroke: var(--highlight-color);
   stroke-width: 2;
 }
 
 .bookmark--marked {
-  fill: #f0a04b;
-  stroke: #f0a04b;
+  fill: var(--highlight-color);
+  stroke: var(--highlight-color);
   stroke-width: 2;
 }
 
