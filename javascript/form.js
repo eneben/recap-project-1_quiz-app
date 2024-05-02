@@ -98,4 +98,47 @@ form.addEventListener("submit", (event) => {
 
   event.target.reset();
   formElements.form__question.focus();
+
+  ///TRYING THINGS OUT//////////copied from index.js///
+
+  const answerButtonList = document.querySelectorAll(
+    '[data-js="show-hide-button"]'
+  );
+
+  answerButtonList.forEach((itemButton) => {
+    itemButton.addEventListener("click", (event) => {
+      const parentCard = event.target.closest('[data-js="card"]');
+      const answer = parentCard.querySelector('[data-js="answer"]');
+
+      answer.classList.toggle("card__answer--visible");
+
+      if (answer.classList.contains("card__answer--visible")) {
+        itemButton.textContent = "Hide Answer";
+      } else {
+        itemButton.textContent = "Show Answer";
+      }
+    });
+  });
+
+  const bookmarkButtonList = document.querySelectorAll(
+    '[data-js="bookmark-button"]'
+  );
+
+  bookmarkButtonList.forEach((bookmarkButton) => {
+    bookmarkButton.addEventListener("click", (event) => {
+      const parentIcon = event.target.closest(
+        '[data-js="card__bookmark--icon"]'
+      );
+
+      if (parentIcon.classList.contains("bookmark--unmarked")) {
+        parentIcon.classList.remove("bookmark--unmarked");
+        parentIcon.classList.add("bookmark--marked");
+        parentIcon.setAttribute("alt", "a marked bookmark icon");
+      } else {
+        parentIcon.classList.remove("bookmark--marked");
+        parentIcon.classList.add("bookmark--unmarked");
+        parentIcon.setAttribute("alt", "an unmarked bookmark icon");
+      }
+    });
+  });
 });
