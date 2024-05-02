@@ -2,6 +2,20 @@ const form = document.querySelector('[data-js="form"]');
 const main = document.querySelector('[data-js="form-main"]');
 let idCounter = 0;
 
+const listOfTextareas = document.querySelectorAll('[data-js="form__textarea"]');
+
+listOfTextareas.forEach((singleTextarea) => {
+  singleTextarea.addEventListener("input", (event) => {
+    const numberOfCharactersEntered = event.target.value.length;
+    const maxCharacters = event.target.getAttribute("maxlength");
+    const charactersLeft = maxCharacters - numberOfCharactersEntered;
+    const counter = event.target.nextElementSibling.querySelector(
+      '[data-js="character-counter"]'
+    );
+    counter.textContent = charactersLeft;
+  });
+});
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const formElements = event.target.elements;

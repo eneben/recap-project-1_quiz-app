@@ -9,7 +9,7 @@
   font-size: var(--medium);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 
 .form__fieldset--legend {
@@ -27,7 +27,12 @@
   background-color: var(--background-color);
   border-radius: 10px;
   font-size: var(--medium);
+}
+
+.form__character-counter {
   margin-bottom: 15px;
+  text-align: end;
+  font-size: var(--small);
 }
 
 .form__user-input:focus {
@@ -36,7 +41,7 @@
 }
 
 .form__submit-button {
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
   border: 2px solid #000;
   padding: 10px 20px;
   background-color: var(--header-color);
