@@ -58,6 +58,11 @@
     border: 2px solid #fff;
     border-radius: 10px;
   }
+  .form__submit-button:active {
+    background-color: var(--highlight-color);
+    color: #000;
+    font-weight: bold;
+  }
 }
 
 @media (pointer: fine) {
@@ -70,5 +75,10 @@
     background-color: var(--highlight-color);
     border: 2px solid #fff;
     border-radius: 10px;
+  }
+  .form__submit-button:hover {
+    background-color: var(--highlight-color);
+    color: #000;
+    font-weight: bold;
   }
 }
