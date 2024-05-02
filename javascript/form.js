@@ -1,5 +1,6 @@
 const form = document.querySelector('[data-js="form"]');
 const main = document.querySelector('[data-js="form-main"]');
+let idCounter = 0;
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -28,9 +29,12 @@ form.addEventListener("submit", (event) => {
     `;
     newCard.append(newBookmarkButton);
 
+    idCounter++;
+    const newQuestionID = "aria-new-question-" + idCounter;
+
     const newQuestion = document.createElement("p");
     newQuestion.classList.add("card__question");
-    // newQuestion.setAttribute("id", "hier müsste die id hochzählen")
+    newQuestion.setAttribute("id", newQuestionID);
     newQuestion.textContent = question;
     newCard.append(newQuestion);
 
@@ -43,7 +47,7 @@ form.addEventListener("submit", (event) => {
 
     const newAnswerContainer = document.createElement("div");
     newAnswerContainer.classList.add("card__answer", "card__answer--visible");
-    // newAnswerContainer.setAttribute("aria-labelledby", "hier müsste die id von oben hochzählen");
+    newAnswerContainer.setAttribute("aria-labelledby", newQuestionID);
     newAnswerContainer.setAttribute("data-js", "answer");
     newCard.append(newAnswerContainer);
 
