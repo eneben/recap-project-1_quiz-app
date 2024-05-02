@@ -27,6 +27,7 @@ form.addEventListener("submit", (event) => {
   function addCard(question, answer, code, tag) {
     const newCard = document.createElement("section");
     newCard.classList.add("card");
+    newCard.setAttribute("data-js", "card");
     newCard.setAttribute("aria-label", "quiz-card");
     main.append(newCard);
 
@@ -36,6 +37,7 @@ form.addEventListener("submit", (event) => {
     newBookmarkButton.setAttribute("data-js", "bookmark-button");
     newBookmarkButton.innerHTML = `
     <svg class="card__bookmark--icon bookmark--unmarked"
+          data-js="card__bookmark--icon"
           alt="an unmarked bookmark icon"
           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
