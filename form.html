@@ -14,8 +14,30 @@
     </header>
     <main>
       <form>
-        <fieldset>
-          <legend>Here you can add your own new quiz question.</legend>
+        <fieldset class="form__fieldset">
+          <legend class="form__fieldset--legend">
+            Here you can add your own new quiz question.
+          </legend>
+          <label for="form__question">Your question:</label>
+          <textarea
+            name="form__question"
+            id="form__question"
+            class="form__user-input"
+          ></textarea>
+          <label for="form__answer">Your answer:</label>
+          <textarea
+            name="form__answer"
+            id="form__answer"
+            class="form__user-input"
+          ></textarea>
+          <label for="form__tag">Tag:</label>
+          <input
+            type="text"
+            name="form__tag"
+            id="form__tag"
+            class="form__user-input"
+          />
+          <button type="submit" class="form__submit-button">Submit</button>
         </fieldset>
       </form>
     </main>
@@ -25,7 +47,7 @@
           <li class="footer__navbar__nav-li-element">
             <a
               aria-labelledby="aria-home"
-              class="footer__navbar__nav-li-element__link footer__navbar__nav-li-element__link--active"
+              class="footer__navbar__nav-li-element__link"
               href="./index.html"
             >
               <svg
@@ -69,7 +91,7 @@
           <li class="footer__navbar__nav-li-element">
             <a
               aria-labelledby="aria-form-page"
-              class="footer__navbar__nav-li-element__link"
+              class="footer__navbar__nav-li-element__link footer__navbar__nav-li-element__link--active"
               href="./form.html"
             >
               <svg
