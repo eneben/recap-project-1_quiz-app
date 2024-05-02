@@ -4,7 +4,7 @@
   padding: 10%;
   position: relative;
   max-width: 750px;
-  background-color: var(--card-background-color);
+  background-color: #fff5cc;
   border-radius: 10px;
   font-size: var(--medium);
   display: flex;
@@ -13,7 +13,7 @@
 }
 
 .form__fieldset--legend {
-  border: 2px solid var(--codeblock-color);
+  border: 2px solid var(--header-color);
   padding: 5px 10px;
   position: relative;
   max-width: 750px;
@@ -39,7 +39,7 @@
   margin: 0 auto;
   border: 2px solid #000;
   padding: 10px 20px;
-  background-color: var(--button-color);
-  color: var(--background-color);
+  background-color: var(--header-color);
   border-radius: 10px;
+  font-weight: bold;
 }
