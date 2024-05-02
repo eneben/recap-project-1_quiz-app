@@ -53,6 +53,11 @@
     color: #000;
     font-weight: bold;
   }
+  .footer__navbar__nav-li-element:active {
+    background-color: var(--highlight-color);
+    border: 2px solid #fff;
+    border-radius: 10px;
+  }
 }
 
 @media (pointer: fine) {
@@ -60,5 +65,10 @@
     background-color: var(--highlight-color);
     color: #000;
     font-weight: bold;
+  }
+  .footer__navbar__nav-li-element:hover {
+    background-color: var(--highlight-color);
+    border: 2px solid #fff;
+    border-radius: 10px;
   }
 }
