@@ -19,7 +19,7 @@
   max-width: 750px;
   background-color: var(--background-color);
   border-radius: 10px;
-  font-size: var(--medium);
+  font-size: var(--small);
 }
 
 .form__user-input {
@@ -27,7 +27,7 @@
   background-color: var(--background-color);
   border-radius: 10px;
   font-size: var(--medium);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .form__user-input:focus {

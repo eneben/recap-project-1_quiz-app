@@ -12,22 +12,30 @@
     <header>
       <h1>Quiz App</h1>
     </header>
-    <main>
-      <form>
+    <main data-js="form-main">
+      <form data-js="form">
         <fieldset class="form__fieldset">
           <legend class="form__fieldset--legend">
-            Here you can add your own new quiz question.
+            Add your own new question:
           </legend>
           <label for="form__question">Your question:</label>
           <textarea
             name="form__question"
             id="form__question"
             class="form__user-input"
+            required
           ></textarea>
           <label for="form__answer">Your answer:</label>
           <textarea
             name="form__answer"
             id="form__answer"
+            class="form__user-input"
+            required
+          ></textarea>
+          <label for="form__code">Your code example:</label>
+          <textarea
+            name="form__code"
+            id="form__code"
             class="form__user-input"
           ></textarea>
           <label for="form__tag">Tag:</label>
@@ -37,7 +45,13 @@
             id="form__tag"
             class="form__user-input"
           />
-          <button type="submit" class="form__submit-button">Submit</button>
+          <button
+            type="submit"
+            class="form__submit-button"
+            data-js="form__submit-button"
+          >
+            Submit
+          </button>
         </fieldset>
       </form>
     </main>
