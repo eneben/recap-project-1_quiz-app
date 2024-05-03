@@ -16,6 +16,8 @@ listOfTextareas.forEach((singleTextarea) => {
   });
 });
 
+// formElements.form__question.focus();
+
 function addCard(question, answer, code, tag) {
   const newCard = document.createElement("section");
   newCard.classList.add("card");
@@ -93,11 +95,14 @@ function addCard(question, answer, code, tag) {
 
     const newTag = document.createElement("li");
     newTag.classList.add("card__hashtags__tag");
-    tag = tag.split(" ").join("-").toLowerCase();
-    if (tag[0] !== "#") {
-      tag = "#" + tag;
+
+    let singleWordTag = tag.split(" ").join("-").toLowerCase();
+
+    if (singleWordTag[0] !== "#") {
+      singleWordTag = "#" + singleWordTag;
     }
-    newTag.textContent = tag;
+    newTag.textContent = singleWordTag;
+
     newTagList.append(newTag);
   }
 }
