@@ -5,6 +5,14 @@ let idCounter = 0;
 
 const listOfTextareas = document.querySelectorAll('[data-js="form__textarea"]');
 
+function increaseHeightOfTextarea(textarea) {
+  textarea.style.height = textarea.scrollHeight + "px";
+}
+
+function resetHeightOfTextarea(textarea) {
+  textarea.style.height = "auto";
+}
+
 listOfTextareas.forEach((singleTextarea) => {
   singleTextarea.addEventListener("input", (event) => {
     const numberOfCharactersEntered = event.target.value.length;
@@ -14,6 +22,7 @@ listOfTextareas.forEach((singleTextarea) => {
       '[data-js="character-counter"]'
     );
     counter.textContent = charactersLeft;
+    increaseHeightOfTextarea(singleTextarea);
   });
 });
 
@@ -118,5 +127,9 @@ form.addEventListener("submit", (event) => {
   addCard(question, answer, code, tag);
 
   event.target.reset();
+  listOfTextareas.forEach((singleTextarea) => {
+    resetHeightOfTextarea(singleTextarea);
+  });
+
   formElements.form__question.focus();
 });
