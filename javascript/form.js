@@ -1,4 +1,5 @@
 const form = document.querySelector('[data-js="form"]');
+const formElements = form.elements;
 const main = document.querySelector('[data-js="form-main"]');
 let idCounter = 0;
 
@@ -16,7 +17,7 @@ listOfTextareas.forEach((singleTextarea) => {
   });
 });
 
-// formElements.form__question.focus();
+formElements.form__question.focus();
 
 function addCard(question, answer, code, tag) {
   const newCard = document.createElement("section");
@@ -109,7 +110,6 @@ function addCard(question, answer, code, tag) {
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  const formElements = event.target.elements;
   const question = formElements.form__question.value;
   const answer = formElements.form__answer.value;
   const code = formElements.form__code.value;
