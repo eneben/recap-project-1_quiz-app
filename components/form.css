@@ -1,0 +1,58 @@
+.form__fieldset {
+  margin: 20px auto;
+  border: 2px solid #000;
+  padding: 10%;
+  position: relative;
+  max-width: 750px;
+  background-color: #fff5cc;
+  border-radius: 10px;
+  font-size: var(--medium);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form__fieldset--legend {
+  border: 2px solid var(--header-color);
+  padding: 5px 10px;
+  position: relative;
+  max-width: 750px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  font-size: var(--small);
+}
+
+.form__user-input {
+  font-family: "PT Sans";
+  padding: 5px;
+  border: 2px solid var(--codeblock-color);
+  background-color: var(--background-color);
+  border-radius: 10px;
+  font-size: var(--medium);
+  min-height: 3.5rem;
+  resize: none;
+}
+
+.form__user-input--tag {
+  min-height: unset;
+}
+
+.form__character-counter {
+  margin-bottom: 15px;
+  text-align: end;
+  font-size: var(--small);
+}
+
+.form__user-input:focus {
+  border: 2px solid var(--highlight-color);
+  outline: none;
+}
+
+.form__submit-button {
+  margin: 20px auto 0 auto;
+  border: 2px solid #000;
+  padding: 10px 20px;
+  background-color: var(--header-color);
+  border-radius: 10px;
+  font-weight: bold;
+}

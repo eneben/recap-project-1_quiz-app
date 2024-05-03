@@ -1,15 +1,10 @@
-/* Toggle Button auf index.html */
-
 const answerButtonList = document.querySelectorAll(
   '[data-js="show-hide-button"]'
 );
 
 answerButtonList.forEach((itemButton) => {
   itemButton.addEventListener("click", (event) => {
-    // console.log("button clicked");
-    // console.log("This button was clicked:", event.target);
-
-    const parentCard = event.target.closest(".card");
+    const parentCard = event.target.closest('[data-js="card"]');
     const answer = parentCard.querySelector('[data-js="answer"]');
 
     answer.classList.toggle("card__answer--visible");
@@ -22,25 +17,13 @@ answerButtonList.forEach((itemButton) => {
   });
 });
 
-/* Toggle Bookmark auf index.html */
-
-/* button eventlistener for each wie oben */
-/* je nach zustand bookmark--unmarked oder bookmark-marked */
-/* je nach zustand alt-attribut ändern */
-
 const bookmarkButtonList = document.querySelectorAll(
   '[data-js="bookmark-button"]'
 );
 
 bookmarkButtonList.forEach((bookmarkButton) => {
   bookmarkButton.addEventListener("click", (event) => {
-    // console.log("This button was clicked:", event.target);
-    // console.log(
-    //   "event.target.closest:",
-    //   event.target.closest(".card__bookmark--icon")
-    // );
-
-    const parentIcon = event.target.closest(".card__bookmark--icon");
+    const parentIcon = event.target.closest('[data-js="card__bookmark--icon"]');
 
     if (parentIcon.classList.contains("bookmark--unmarked")) {
       parentIcon.classList.remove("bookmark--unmarked");

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./javascript/form.js" defer></script>
     <script src="./javascript/index.js" defer></script>
     <link rel="icon" href="./icons/favicon.svg" />
   </head>
@@ -12,58 +13,63 @@
     <header>
       <h1>Quiz App</h1>
     </header>
-    <main>
-      <section aria-label="quiz-card" class="card" data-js="card">
-        <button
-          aria-label="bookmark for the quiz-card"
-          class="card__bookmark"
-          data-js="bookmark-button"
-        >
-          <svg
-            class="card__bookmark--icon bookmark--marked"
-            data-js="card__bookmark--icon"
-            alt="a marked bookmark icon"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"
-            />
-          </svg>
-        </button>
-        <p id="aria-question" class="card__question">
-          How to create a code block in markdown?
-        </p>
-        <button
-          aria-label="button"
-          class="card__show-hide-button"
-          data-js="show-hide-button"
-        >
-          Hide Answer
-        </button>
-        <div
-          class="card__answer card__answer--visible"
-          data-js="answer"
-          aria-labelledby="aria-question"
-        >
-          <p>
-            A code block is created with three backticks before and after the
-            code:
+    <main data-js="form-main">
+      <form data-js="form">
+        <fieldset class="form__fieldset">
+          <legend class="form__fieldset--legend">
+            Add your own new question:
+          </legend>
+          <label for="form__question">Your question:</label>
+          <textarea
+            name="form__question"
+            id="form__question"
+            class="form__user-input"
+            data-js="form__textarea"
+            maxlength="150"
+            required
+          ></textarea>
+          <p class="form__character-counter">
+            <span data-js="character-counter">150</span> characters left
           </p>
-          <div class="card__answer__code-block">
-            <code
-              >```<br />
-              code <br />
-              ```</code
-            >
-          </div>
-        </div>
-        <ul aria-label="relating hashtags to this card" class="card__hashtags">
-          <li class="card__hashtags__tag">#markdown</li>
-          <li class="card__hashtags__tag">#formatting</li>
-          <li class="card__hashtags__tag">#codeblock</li>
-        </ul>
-      </section>
+          <label for="form__answer">Your answer:</label>
+          <textarea
+            name="form__answer"
+            id="form__answer"
+            class="form__user-input"
+            data-js="form__textarea"
+            maxlength="150"
+            required
+          ></textarea>
+          <p class="form__character-counter">
+            <span data-js="character-counter">150</span> characters left
+          </p>
+          <label for="form__code">Your code example:</label>
+          <textarea
+            name="form__code"
+            id="form__code"
+            class="form__user-input"
+            data-js="form__textarea"
+            maxlength="100"
+          ></textarea>
+          <p class="form__character-counter">
+            <span data-js="character-counter">100</span> characters left
+          </p>
+          <label for="form__tag">Tag:</label>
+          <input
+            type="text"
+            name="form__tag"
+            id="form__tag"
+            class="form__user-input form__user-input--tag"
+          />
+          <button
+            type="submit"
+            class="form__submit-button"
+            data-js="form__submit-button"
+          >
+            Submit
+          </button>
+        </fieldset>
+      </form>
     </main>
     <footer>
       <nav aria-label="navigation bar">
@@ -92,7 +98,7 @@
           <li class="footer__navbar__nav-li-element">
             <a
               aria-labelledby="aria-bookmarks-page"
-              class="footer__navbar__nav-li-element__link footer__navbar__nav-li-element__link--active"
+              class="footer__navbar__nav-li-element__link"
               href="./bookmarks.html"
             >
               <svg
@@ -115,7 +121,7 @@
           <li class="footer__navbar__nav-li-element">
             <a
               aria-labelledby="aria-form-page"
-              class="footer__navbar__nav-li-element__link"
+              class="footer__navbar__nav-li-element__link footer__navbar__nav-li-element__link--active"
               href="./form.html"
             >
               <svg
