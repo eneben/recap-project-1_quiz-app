@@ -10,7 +10,7 @@ function increaseHeightOfTextarea(textarea) {
 }
 
 function resetHeightOfTextarea(textarea) {
-  textarea.style.height = "auto";
+  textarea.style.height = "3.5rem";
 }
 
 listOfTextareas.forEach((singleTextarea) => {
@@ -127,6 +127,7 @@ form.addEventListener("submit", (event) => {
   addCard(question, answer, code, tag);
 
   event.target.reset();
+
   listOfTextareas.forEach((singleTextarea) => {
     resetHeightOfTextarea(singleTextarea);
   });

@@ -23,11 +23,17 @@
 }
 
 .form__user-input {
+  font-family: "PT Sans";
+  padding: 5px;
   border: 2px solid var(--codeblock-color);
   background-color: var(--background-color);
   border-radius: 10px;
   font-size: var(--medium);
-  height: fit-content;
+  min-height: 3.5rem;
+}
+
+.form__user-input--tag {
+  min-height: unset;
 }
 
 .form__character-counter {
