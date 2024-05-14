@@ -1,27 +1,25 @@
-const answerButtonList = document.querySelectorAll(
-  '[data-js="show-hide-button"]'
-);
+const answerButtons = document.querySelectorAll('[data-js="show-hide-button"]');
 
-answerButtonList.forEach((itemButton) => {
-  itemButton.addEventListener("click", (event) => {
+answerButtons.forEach((answerButton) => {
+  answerButton.addEventListener("click", (event) => {
     const parentCard = event.target.closest('[data-js="card"]');
     const answer = parentCard.querySelector('[data-js="answer"]');
 
     answer.classList.toggle("card__answer--visible");
 
     if (answer.classList.contains("card__answer--visible")) {
-      itemButton.textContent = "Hide Answer";
+      answerButton.textContent = "Hide Answer";
     } else {
-      itemButton.textContent = "Show Answer";
+      answerButton.textContent = "Show Answer";
     }
   });
 });
 
-const bookmarkButtonList = document.querySelectorAll(
+const bookmarkButtons = document.querySelectorAll(
   '[data-js="bookmark-button"]'
 );
 
-bookmarkButtonList.forEach((bookmarkButton) => {
+bookmarkButtons.forEach((bookmarkButton) => {
   bookmarkButton.addEventListener("click", (event) => {
     const parentIcon = event.target.closest('[data-js="card__bookmark--icon"]');
 

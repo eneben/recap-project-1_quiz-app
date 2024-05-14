@@ -3,7 +3,7 @@ const formElements = form.elements;
 const main = document.querySelector('[data-js="form-main"]');
 let idCounter = 0;
 
-const listOfTextareas = document.querySelectorAll('[data-js="form__textarea"]');
+const textareas = document.querySelectorAll('[data-js="form__textarea"]');
 
 function increaseHeightOfTextarea(textarea) {
   textarea.style.height = textarea.scrollHeight + "px";
@@ -13,8 +13,8 @@ function resetHeightOfTextarea(textarea) {
   textarea.style.height = "3.5rem";
 }
 
-listOfTextareas.forEach((singleTextarea) => {
-  singleTextarea.addEventListener("input", (event) => {
+textareas.forEach((textarea) => {
+  textarea.addEventListener("input", (event) => {
     const numberOfCharactersEntered = event.target.value.length;
     const maxCharacters = event.target.getAttribute("maxlength");
     const charactersLeft = maxCharacters - numberOfCharactersEntered;
@@ -22,7 +22,7 @@ listOfTextareas.forEach((singleTextarea) => {
       '[data-js="character-counter"]'
     );
     counter.textContent = charactersLeft;
-    increaseHeightOfTextarea(singleTextarea);
+    increaseHeightOfTextarea(textarea);
   });
 });
 
@@ -128,8 +128,8 @@ form.addEventListener("submit", (event) => {
 
   event.target.reset();
 
-  listOfTextareas.forEach((singleTextarea) => {
-    resetHeightOfTextarea(singleTextarea);
+  textareas.forEach((textarea) => {
+    resetHeightOfTextarea(textarea);
   });
 
   formElements.form__question.focus();
